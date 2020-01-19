@@ -1,3 +1,5 @@
+## Written by Connor Glossop
+
 import time
 import cv2
 from imageai.Detection import ObjectDetection
