@@ -1,3 +1,5 @@
+##  Written by Connor Glossop
+
 import cv2
 from imageai.Detection import ObjectDetection
 import os
