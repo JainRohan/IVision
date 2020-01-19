@@ -1,7 +1,14 @@
-import time
 import cv2
 from imageai.Detection import ObjectDetection
 import os
+
+
+def cleanup(path):
+    for file in os.listdir(path):
+        if file.endswith(".png"):
+            os.remove(file)
+    print("Directory Cleared")
+
 
 cam = cv2.VideoCapture(0)
 cv2.namedWindow("test")
@@ -32,8 +39,8 @@ while True:
         print("Escape hit, closing...")
         break
 
-    time.sleep(0.25)
-
 cam.release()
 
 cv2.destroyAllWindows()
+
+cleanup(os.getcwd())
