@@ -4,7 +4,6 @@ import cv2
 from imageai.Detection import ObjectDetection
 import os
 
-
 def cleanup(path):
     for file in os.listdir(path):
         if file.endswith(".png"):
